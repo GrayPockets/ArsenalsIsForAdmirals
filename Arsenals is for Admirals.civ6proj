@@ -23,22 +23,76 @@
   <Dependency type="Mod" title="More Maritime: Seaside Sectors" id="58ecce8a-d3df-430a-b135-280908153662" />
   <Reference type="Dlc" title="Portugal Pack" id="FFDF4E79-DEE2-47BB-919B-F5739106627A" />
 </Associations>]]></AssociationData>
-    <InGameActionData><![CDATA[<InGameActions><UpdateText id="Text_ArsenalsIsForAdmirals"><Properties><LoadOrder>1</LoadOrder></Properties><File>SQL/Text/ArsenalsIsForAdmirals.sql</File></UpdateText><UpdateIcons id="Icon_ArsenalsIsForAdmirals"><Properties><LoadOrder>1</LoadOrder></Properties><File>SQL/Icon/ArsenalsIsForAdmirals.sql</File></UpdateIcons><UpdateDatabase id="Game_ArsenalsIsForAdmirals"><Properties><LoadOrder>1</LoadOrder></Properties><File>SQL/Game/ArsenalsIsForAdmirals.sql</File></UpdateDatabase><UpdateDatabase id="Game_ArsenalsIsForAdmirals_DLC12"><Properties><LoadOrder>400</LoadOrder></Properties><Criteria>DLC12</Criteria><File>SQL/Game/ArsenalsIsForAdmirals_DLC12.sql</File></UpdateDatabase></InGameActions>]]></InGameActionData>
+    <InGameActionData><![CDATA[<InGameActions><UpdateText id="Text_ArsenalsIsForAdmirals"><Properties><LoadOrder>1</LoadOrder></Properties><File>SQL/Text/ArsenalsIsForAdmirals.sql</File></UpdateText><UpdateIcons id="Icon_ArsenalsIsForAdmirals"><Properties><LoadOrder>2</LoadOrder></Properties><File>SQL/Icon/ArsenalsIsForAdmirals.sql</File></UpdateIcons><UpdateDatabase id="Game_ArsenalsIsForAdmirals"><Properties><LoadOrder>1</LoadOrder></Properties><File>SQL/Game/ArsenalsIsForAdmirals.sql</File></UpdateDatabase><UpdateDatabase id="Game_ArsenalsIsForAdmirals_DLC12"><Properties><LoadOrder>400</LoadOrder></Properties><Criteria>DLC12</Criteria><File>SQL/Game/ArsenalsIsForAdmirals_DLC12.sql</File></UpdateDatabase><UpdateArt id="Art_ArsenalsIsForAdmirals"><Properties><LoadOrder>1</LoadOrder></Properties><File>(Mod Art Dependency File)</File></UpdateArt></InGameActions>]]></InGameActionData>
     <ActionCriteriaData><![CDATA[<ActionCriteria><Criteria id="DLC12" any="1"><LeaderPlayable>Players:StandardPlayers::LEADER_JOAO_III,Players:Expansion1_Players::LEADER_JOAO_III,Players:Expansion2_Players::LEADER_JOAO_III</LeaderPlayable></Criteria></ActionCriteria>]]></ActionCriteriaData>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
     <OutputPath>.</OutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="Arsenals_is_for_Admirals.Art.xml" />
+    <None Include="Arsenals is for Admirals.Art.xml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="ArtDefs" />
+    <Folder Include="Textures" />
+    <Folder Include="XLPs" />
     <Folder Include="SQL" />
     <Folder Include="SQL\Game" />
     <Folder Include="SQL\Icon" />
     <Folder Include="SQL\Text" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Textures\ArsenalProject_128.dds">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="Textures\ArsenalProject_128.tex">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="Textures\ArsenalProject_256.dds">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="Textures\ArsenalProject_256.tex">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="Textures\ArsenalProject_32.dds">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="Textures\ArsenalProject_32.tex">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="Textures\ArsenalProject_38.dds">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="Textures\ArsenalProject_38.tex">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="Textures\ArsenalProject_50.dds">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="Textures\ArsenalProject_50.tex">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="Textures\ArsenalProject_80.dds">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="Textures\ArsenalProject_80.tex">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="Textures\ArsenalProject_30.dds">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="Textures\ArsenalProject_30.tex">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="Textures\ArsenalProject_70.dds">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="Textures\ArsenalProject_70.tex">
+      <SubType>Content</SubType>
+    </None>
+    <Content Include="XLPs\UITextures.xlp">
+      <SubType>Content</SubType>
+    </Content>
     <None Include=".gitignore">
       <SubType>Content</SubType>
     </None>
@@ -54,6 +108,9 @@
     <None Include="Arsenals is for Admirals.xcf">
       <SubType>Content</SubType>
     </None>
+    <Content Include="ArtDefs\UITextures.artdef">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="SQL\Game\ArsenalsIsForAdmirals.sql">
       <SubType>Content</SubType>
     </Content>
